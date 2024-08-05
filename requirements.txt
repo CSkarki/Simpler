@@ -1,1 +1,7 @@
 flask
+langchain_openai
+langchain_community
+langchain
+langchain_text_splitters
+pypdf
+chromadb

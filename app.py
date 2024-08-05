@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template_string
-
+from ingest-data import add_to_chroma, split_documents, load_documents
 
 import os
 
@@ -25,12 +25,12 @@ def process_question(question):
 
 
 def upload_directory(directory_path):
-    """
+
     pdf_docs1 = load_documents(directory_path)
     text_chunks = split_documents(pdf_docs1)
     uploaded_docs = add_to_chroma(text_chunks)
     uploaded_files = []
-    """
+
     return f"Uploaded files: {directory_path}"
 
 
